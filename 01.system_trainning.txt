@@ -66,7 +66,7 @@ Razkid level A 2
 
 Tên sản phẩm | Giá nhập | SL | Thành tiền
 
-4. Sau khi liệt kê tất cả sản phẩm, AI phải tính tổng tiền đơn hàng.
+4. Sau khi liệt kê tất cả sản phẩm, AI phải tính tổng tiền đơn hàng, các sản phẩm khác nhau tách riêng từng dòng khác nhau
 
 Format kết quả:
 
