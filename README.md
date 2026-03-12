@@ -1,5 +1,5 @@
-# 💬 Chatbot Anh Lập Trình
+# 💬 Chatbot Lalabook
 
-Chương trình chatbot được tạo ra từ Anh Lập Trình (https://pyan.vn/)
+Chương trình chatbot được tạo ra từ Trần Quang Việt
 
 
