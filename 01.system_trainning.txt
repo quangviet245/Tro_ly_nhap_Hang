@@ -43,6 +43,47 @@ KHÔNG được:
 
 Tên sản phẩm | Giá nhập
 
+CHỨC NĂNG TÍNH ĐƠN HÀNG
+
+Sau khi tìm được giá nhập của sản phẩm trong dữ liệu, AI phải hỗ trợ tính tiền đơn hàng.
+
+Quy tắc xử lý:
+
+1. Nhân viên có thể nhập đơn hàng theo dạng:
+   <tên sản phẩm> <số lượng>
+
+Ví dụ:
+Dog man 5
+Usborne Xanh 3
+Razkid level A 2
+
+2. AI phải:
+- tìm đúng tên sản phẩm trong dữ liệu
+- lấy giá nhập
+- nhân với số lượng
+
+3. Format trả lời:
+
+Tên sản phẩm | Giá nhập | SL | Thành tiền
+
+4. Sau khi liệt kê tất cả sản phẩm, AI phải tính tổng tiền đơn hàng.
+
+Format kết quả:
+
+<danh sách sản phẩm>
+
+--------------------------------
+
+Tổng tiền đơn hàng: <tổng>
+
+5. Nếu sản phẩm có giá là "không có" trong dữ liệu:
+
+Tên sản phẩm | Giá nhập: chưa có | SL: x
+→ Không tính vào tổng tiền
+
+6. Không được tự tạo giá mới.
+Chỉ sử dụng giá có trong dữ liệu sản phẩm.
+
 DATA TRAINING – AI TRỢ LÝ ĐẶT HÀNG
 
 I wonder why | 55
@@ -152,6 +193,127 @@ Big Fat 5 cuốn | 75
 Miền dâu dại bản gộp | 30
 240 Vocabulary | 31
 Nate the grate 30 cuốn | 46
-
+Kumon Sumer Review | 35
+Natgeo Science Grade K - 36 cuốn | 40
+Oxford Discover bản 2nd | 23
+What was - Bộ 27 cuốn | 75
+Usborne farmyard tales | 16
+Learning Grammar Nhập | 26
+Reading with Phonics | 46
+Usborne Phonic Reader 20 cuốn | 60
+Global Issue | 110
+Sapiens Lược sử loài người | 95
+Usborne for beginners 11 cuốn | 90
+Oxford Dictionary Bộ 8c | 40
+All board reading | 24
+I survived | 43
+Dr Desuss classic 20 cuốn | 45
+BÁCH KHOA TOÀN THƯ BRITANNICA | 32
+Listening and notetaking | 70
+Scholastic Success | không có
+Case of good manners | 24
+[Sách Nhập Khẩu] The Usborne Writting Box | 45
+NoodleHeads | không có
+Learning to get along | 42
+Very First Alphabet Sentences | 105
+Point of view bản 48 cuốn | 105
+Sight Word Tales | 48
+Maisy Mouse 36 cuốn | 75
+Billy Monster boxset 14c | 42
+Famous five Adventure 15c | 50
+Super simple song nhập 9c | 35
+Our Universe 7c | 25
+Writing Framework | 98
+Pokemon boxset 15c | 37
+One story a day Level 1 | 36
+One story a day level 2 | 36
+One story a day level 3 | 36
+One Story a Day Science | 36
+Marvel Story time 20c boxset bìa cứng | 75
+How to train your dragon boxset | 65
+First Little Readers 5 hộp | 70
+Dr Sueuss Big Book of Beginers Bộ 8 cuốn bìa cứng | 97
+NeverMoor Series 3 cuốn | 75
+Scholastic Readers truyện danh nhân 20 cuốn | 85
+News and Big Debate | 70
+Faraway tree Kèm Audio | 45
+Kumon 2-3-4-5 | 55
+[ Sách Nhập Khẩu ] Dr Sues Khoa Học 33 cuốn | 58
+[Sách Nhập Khẩu ] Smart Start Sight Words | 35
+[Sách nhập khẩu] The Cartoon Guide To 9 cuốn | 90
+[Sách Nhập Khẩu] Mine Craft - Hộp to 6 cuốn xanh lá | 82
+[ Sách Nhập Khẩu] Paw Patrol - Bản 26 cuốn | 50
+[ Sách Nhập Khẩu ] I Can Read Phonics 84 cuốn | 35
+[Sách Nhập Khẩu] Learning Mathematics 9 cuốn | 60
+[Sách Nhập Khẩu] Let's go 5th Edition | 35
+Start reading | 75
+[Sách Nhập Khẩu] Heros of Olympus | 60
+[Sách Nhập Khẩu] Key Word Boxset 36 cuốn | 80
+Wonder Skills Readers - Basic | 42
+Wonder Skills Readers - Starter | 42
+Usborne History of Britain | 80
+The Usborne Introduction World War | 45
+Adam Kay Bộ 6 cuốn | 75
+( Sách nhập khẩu ) A Question of technology | 55
+[Sách Nhập Khẩu] My Life | 62
+Raina Telgemeier - bản 6 cuốn | 60
+[Sách Nhập Khẩu] Biff, Chip, Kipper 1,2,3 | 40
+[ Sách Nhập Khẩu ] Peppa pig in rời ss3 | 65
+[ Sách Nhập Khẩu ] Peppa pig in rời ss2 | 65
+[ Sách Nhập Khẩu ] Peppa pig in rời ss1 | 70
+[Sách Nhập Khẩu] Safety First 6c - Giáo dục an toàn | 25
+[Sách Nhập Khẩu] David Walliams 22 cuốn | 110
+[Sách Nhập Khẩu] National Geographic Kids - Pre-reader- 30 Cuốn | 44
+[ Sách Nhập Khẩu] National Geographic Kids - Level 1 - 46 cuốn | 68
+[ Sách Nhập Khẩu] National Geographic Kids - Level 2 - 41 cuốn | 60,8
+[ Sách Nhập Khẩu] National Geographic Kids - Level 3 - 38 cuốn | 56,354
+[Sách Nhập Khẩu] Science Comic - 31 cuốn | 120
+Usborne Phonics Reader | 65
+[Sách Nhập Khẩu] Phonics Tales | 48
+[Sách Nhập Khẩu] The last Kids on earth 13c | 145
+[Sách Nhập Khẩu] Wow English 2 Season | 45
+[Sách Nhập Khẩu] 100 Things To Know About | 90
+[Sách Nhập Khẩu] DK Findout 4 cuốn | 28
+[Sách Nhập Khẩu] A to Z Mysterious | 40
+[Sách Nhập Khẩu] Mine Craft Bản 6 cuốn thường - hộp nhỏ | 33
+[Sách Nhập Khẩu] Grammar Friends Bộ 6 cuốn | 28
+[Sách Nhập Khẩu] Learning English Vocabulary 6 cuốn | 28
+[Sách Nhập Khẩu] Harry Potter Film Edition 7 cuốn | 50
+[ Sách Nhập Khẩu ] Frog And Toad bản 16 cuốn | 7
+[Sách Nhập Khẩu] Young Scienctists 40 cuốn 2024 | 267
+Time For Reading Fluency | 43
+[Sách Nhập] Who Would Win 24 cuốn | 50
+[Schs Nhập Khẩu] Dork Diaries 18 cuốn | 95
+[Sách Nhập khẩu] Usborne Peep Inside Series | 9
+Usborne Pop Up Series | 16
+[Sách Nhập khẩu] Peep Inside a Fairy Tale Series | 9
+[Sách Nhập Khẩu] Usborne Look Insde | 15
+[Sách Nhập Khẩu] Harry Potter 5 cuốn- Ấn bản đặc biệt | 130
+Sách Nhập Khẩu] Investigator Bìa Cứng 11 cuốn | 110
+[Sách Nhập Khẩu] Goose Bumps | 50
+[Sách Nhập Khẩu] First Little Comics | 55
+[Sách Nhập Khẩu] Guid Blyton the Mysterious Seri 15 cuốn | 77
+( Sách Nhập Khẩu) Middle School | 85
+[Sách Nhập Khẩu] Step Into Reading - Phonics Patrol 12 books box, Chú chó cứu hộ Paw Patrol | 16
+[SÁCH NHẬP KHẨU] Little Fox Journey to the West | 45
+My Awesome Book - Counting Book | 23
+My Awesome Book - Alphabet Book | 23
+Bizzy Bear | 11
+[Sách Nhập khẩu] Evan Moor Early Bird | 32
+Natgeo look | 17,75
+Pete the cat phonics | 9
+Geronimo Stilton Reporter | 75
+Debating the Issues | 70
+Maisy mouse 10 cuốn bìa mềm | 20
+Dr Seuss Classic | 50
+Adam Kay – Bộ 6 cuốn | 75
+READING WONDERS grade K | 43
+Usborne A DRAWING A DAY & A PUZZLE A DAY | 25
+Big Step | 120
+[Sách nhập khẩu] Barry Loser 9 cuốn | 40
+[Sách nhập khẩu] Scientists Who Changed History bìa cứng | 30
+[Sách nhập khẩu] THE ART BOOK – BIG IDEAS SIMPLY EXPLAINED | 30
+[Sách nhập khẩu] Nick and Tesla’s Boxset | 85
+Fat Stanley | 45
 
 
